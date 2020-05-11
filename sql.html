@@ -19,7 +19,7 @@
 					<h1>
 						Joseph Summerlin
 						<br>
-						<Student Portfolio>
+						Student Portfolio
 					</h1>
 				</div>
 				<div id="nav">
@@ -61,7 +61,7 @@
 				.INSERT INTO enrollments
 				.(enroll_date, class_id, stu_id, status)
 				.VALUES
-				(.SYSDATE, p_class_id, p_stu_id, 'Enrolled');
+				.(.SYSDATE, p_class_id, p_stu_id, 'Enrolled');
 				.COMMIT;
 				.EXCEPTION
 				.WHEN e_already_enrolled THEN
