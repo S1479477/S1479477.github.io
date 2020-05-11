@@ -41,7 +41,7 @@
 				that I worked on with a groupmate in the class.
 			</p>
 			<p>
-				 < ?php
+				  ?php
 				//set default values
 				$number1 = 78;
 				$number2 = -105.33;
@@ -57,18 +57,18 @@
 						$number3 = filter_input(INPUT_POST, 'number3');
 
 						// make sure the user enters three numbers
-						for ($i = 0; $i < strlen($number1); $i++) {
-							if (ord(substr($number1, $i, 1)) > 57 || ord(substr($number1, $i, 1)) < 44 || ord(substr($number1, $i, 1)) === 47) {
+						for ($i = 0; $i  strlen($number1); $i++) {
+							if (ord(substr($number1, $i, 1)) > 57 || ord(substr($number1, $i, 1))  44 || ord(substr($number1, $i, 1)) === 47) {
 								$message = "The first number is not valid";
 							}
 						}
-						for ($i = 0; $i < strlen($number2); $i++) {
-							if (ord(substr($number2, $i, 1)) > 57 || ord(substr($number2, $i, 1)) < 44 || ord(substr($number2, $i, 1)) === 47) {
+						for ($i = 0; $i  strlen($number2); $i++) {
+							if (ord(substr($number2, $i, 1))  57 || ord(substr($number2, $i, 1))  44 || ord(substr($number2, $i, 1)) === 47) {
 								$message = "The second number is not valid";
 							}
 						}
-						for ($i = 0; $i < strlen($number3); $i++) {
-							if (ord(substr($number3, $i, 1)) > 57 || ord(substr($number3, $i, 1)) < 44 || ord(substr($number3, $i, 1)) === 47) {
+						for ($i = 0; $i  strlen($number3); $i++) {
+							if (ord(substr($number3, $i, 1))  57 || ord(substr($number3, $i, 1))  44 || ord(substr($number3, $i, 1)) === 47) {
 								$message = "The third number is not valid";
 							}
 						}
